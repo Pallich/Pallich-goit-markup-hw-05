@@ -8,6 +8,7 @@
   --header-contacts: #757575;
   --hero-background-color: rgba(47, 48, 58, 0.4);
   --hero-background-color-alternative: #c4c4c4;
+  --doing-cards-bgcolor: rgba(47, 48, 58, 0.8);
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --button-background: #f5f4fa;
   --footer-background: #2f303a;
@@ -360,6 +361,26 @@ p {
 
 .doing-list .items:not(:last-child) {
   margin-right: 30px;
+}
+
+.doing-list .items {
+  position: relative;
+}
+
+.doing-text {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: var(--doing-cards-bgcolor);
+  text-transform: uppercase;
+  left: 0;
+  bottom: 0;
+  color: var(--prymary-bg-color);
+  font-weight: 700;
+  line-height: 1.17;
+  align-items: center;
+  justify-content: center;
 }
 
 /* team */
