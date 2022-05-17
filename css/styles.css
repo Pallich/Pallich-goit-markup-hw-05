@@ -686,7 +686,21 @@ p {
 }
 
 .works-foto {
+  position: relative;
+
   display: block;
+}
+
+.works-foto::before {
+  position: absolute;
+
+  content: '';
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #188ce8;
 }
 
 .card-border {
