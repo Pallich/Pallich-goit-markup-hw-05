@@ -17,6 +17,7 @@
   --filter-buttons-shadow-color-one: rgba(0, 0, 0, 0.12);
   --filter-buttons-shadow-color-two: rgba(0, 0, 0, 0.08);
   --filter-buttons-shadow-color-three: rgba(0, 0, 0, 0.1);
+  --works-overlay-color: rgba(33, 150, 243, 0.9);
   --works-card-shadow-color-one: rgba(0, 0, 0, 0.16);
   --works-card-shadow-color-two: rgba(0, 0, 0, 0.06);
   --works-card-shadow-color-three: rgba(0, 0, 0, 0.12);
@@ -686,21 +687,28 @@ p {
 }
 
 .works-foto {
-  position: relative;
-
   display: block;
 }
 
-.works-foto::before {
-  position: absolute;
+.works-thumb {
+  position: relative;
+}
 
-  content: '';
+.works-overlay {
+  position: absolute;
+  display: flex;
 
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 100%;
   left: 0;
-  background-color: #188ce8;
+  padding: 63px 24px;
+
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--prymary-bg-color);
+  background-color: var(--works-overlay-color);
 }
 
 .card-border {
