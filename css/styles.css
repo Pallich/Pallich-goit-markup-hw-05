@@ -51,6 +51,12 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -755,10 +761,6 @@ p {
   margin-bottom: 0;
 }
 
-.works-foto {
-  display: inline-block;
-}
-
 .works-thumb {
   position: relative;
   overflow: hidden;
@@ -780,7 +782,7 @@ p {
   color: var(--prymary-bg-color);
   background-color: var(--works-overlay-color);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--animations-time-function);
 }
 
