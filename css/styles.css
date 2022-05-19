@@ -703,6 +703,7 @@ img {
   display: flex;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
 
@@ -714,7 +715,6 @@ img {
 .footer-icons-link:hover,
 .footer-icons-link:focus {
   background-color: var(--active-color);
-  border-radius: 50%;
 }
 
 /* --------------------------------------------- PORTFOLIO PAGE ---------------------------------------------*/
